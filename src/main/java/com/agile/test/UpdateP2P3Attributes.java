@@ -21,10 +21,7 @@ public class UpdateP2P3Attributes implements ICustomAction
 		try{
 			IItem itemName = (IItem)object;
 			System.out.println("Item Name>> " +itemName);
-			System.out.println("Item Name>> " +itemName);
-			System.out.println("Item Name>> " +itemName);
-			System.out.println("Item Name>> " +itemName);
-			System.out.println("Item Name>> " +itemName);
+
 			
 			ICell addDesc  = (ICell)itemName.getCell(ItemConstants.ATT_PAGE_TWO_TEXT11);
 			addDesc.setValue("Modified Description1");
