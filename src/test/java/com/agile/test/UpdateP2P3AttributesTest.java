@@ -1,10 +1,5 @@
 package com.agile.test;
 
-import org.junit.Test;
-
-import com.agile.api.IAgileSession;
-import com.agile.api.IDataObject;
-import com.agile.api.INode;
 import com.agile.px.ActionResult;
 import com.agile.test.UpdateP2P3Attributes;
 
@@ -14,10 +9,6 @@ import junit.framework.TestCase;
 public class UpdateP2P3AttributesTest  extends TestCase
 {
 
-
-
-
- @Test  
 public void testGetHello()
 {
     Assert.assertEquals(UpdateP2P3Attributes.getHello(),"Hello");
@@ -33,7 +24,6 @@ public void testDoAction(IAgileSession session, INode actionNode, IDataObject ob
     	assertNotNull(outcome);
     }*/
 
-@Test
 public void testDoAction()
 {
 	UpdateP2P3Attributes UpdateP2P3AttributesObj = new UpdateP2P3Attributes();
