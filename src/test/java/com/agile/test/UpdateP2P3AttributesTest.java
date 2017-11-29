@@ -24,13 +24,13 @@ public void testDoAction(IAgileSession session, INode actionNode, IDataObject ob
     	assertNotNull(outcome);
     }*/
 
-public void testDoAction()
-{
-	UpdateP2P3Attributes UpdateP2P3AttributesObj = new UpdateP2P3Attributes();
-	ActionResult outcome = UpdateP2P3AttributesObj.doAction(null, null, null);
-	Assert.assertNull(outcome);
-	
-}
+//public void testDoAction()
+//{
+//	UpdateP2P3Attributes UpdateP2P3AttributesObj = new UpdateP2P3Attributes();
+//	ActionResult outcome = UpdateP2P3AttributesObj.doAction(null, null, null);
+//	Assert.assertNull(outcome);
+//	
+//}
 
 
 
