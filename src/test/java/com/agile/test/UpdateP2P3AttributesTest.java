@@ -1,41 +1,47 @@
 package com.agile.test;
 
+import org.junit.Test;
+
+import com.agile.api.IAgileSession;
+import com.agile.api.IDataObject;
+import com.agile.api.INode;
+import com.agile.px.ActionResult;
 import com.agile.test.UpdateP2P3Attributes;
 
 import junit.framework.Assert;
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class UpdateP2P3AttributesTest 
-    extends TestCase
+public class UpdateP2P3AttributesTest  extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-//    public AppTest( String testName )
-//    {
-//        super( testName );
-//    }
-//
-//    /**
-//     * @return the suite of tests being tested
-//     */
-//    public static Test suite()
-//    {
-//        return new TestSuite( AppTest.class );
-//    }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testGetHello()
+
+
+
+ @Test  
+public void testGetHello()
+{
+    Assert.assertEquals(UpdateP2P3Attributes.getHello(),"Hello");
+    
+}
+
+
+/*@Test
+public void testDoAction(IAgileSession session, INode actionNode, IDataObject object)
     {
-        Assert.assertEquals(UpdateP2P3Attributes.getHello(),"Hello");
-    }
+    	ActionResult outcome = null;
+    	outcome=new UpdateP2P3Attributes().doAction(session, actionNode, object);
+    	assertNotNull(outcome);
+    }*/
+
+@Test
+public void testDoAction()
+{
+	UpdateP2P3Attributes UpdateP2P3AttributesObj = new UpdateP2P3Attributes();
+	ActionResult outcome = UpdateP2P3AttributesObj.doAction(null, null, null);
+	Assert.assertNull(outcome);
+	
+}
+
+
+
 }
