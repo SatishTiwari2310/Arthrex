@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:noNamespaceSchemaLocation="../acp_control_file.xsd">
+<copy>
+	<class px_association_rule="replace">
+		<include>
+			<pattern>Parts</pattern>
+		</include>
+	</class>
+
+	<subclass px_association_rule="replace">
+		<include>
+			
+			<type name="Parts">
+				<pattern>Demo Subclass6</pattern>
+			</type>
+			
+		</include>	
+	</subclass>
+
+	
+	<criteria force_update="yes">
+		<include>
+			<pattern>All Demo Subclass parts</pattern>
+		</include>
+	</criteria>
+
+	<role  user_association_rule="ignore" objects_per_file="1000">
+		<include>
+			<pattern>Manage Demo Parts</pattern>	
+		</include>
+	</role>	
+	
+	<privilege objects_per_file="1000">
+		<include>
+			<pattern>Discover All Demo Subclass parts</pattern>
+			<pattern>Read All Demo Subclass parts</pattern>
+			<pattern>Create Demo Subclass parts</pattern>
+			<pattern>Modify All Demo Subclass parts</pattern>
+		</include>
+	</privilege>
+	<process_extension>
+		<include>
+			<pattern>Update P2 P3 Attributes</pattern>
+		</include>
+	</process_extension>
+	
+	
+</copy>
+
+
+			
+</agile>
