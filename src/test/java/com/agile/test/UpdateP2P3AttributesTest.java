@@ -15,15 +15,6 @@ public void testGetHello()
     
 }
 
-
-/*@Test
-public void testDoAction(IAgileSession session, INode actionNode, IDataObject object)
-    {
-    	ActionResult outcome = null;
-    	outcome=new UpdateP2P3Attributes().doAction(session, actionNode, object);
-    	assertNotNull(outcome);
-    }*/
-
 //public void testDoAction()
 //{
 //	UpdateP2P3Attributes UpdateP2P3AttributesObj = new UpdateP2P3Attributes();
@@ -31,7 +22,5 @@ public void testDoAction(IAgileSession session, INode actionNode, IDataObject ob
 //	Assert.assertNull(outcome);
 //	
 //}
-
-
 
 }
