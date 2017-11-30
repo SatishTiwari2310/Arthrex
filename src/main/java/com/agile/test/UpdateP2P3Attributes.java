@@ -30,7 +30,7 @@ public class UpdateP2P3Attributes implements ICustomAction
 			ICell siteInfo = (ICell)itemName.getCell(ItemConstants.ATT_PAGE_THREE_TEXT01);
 			siteInfo.setValue("Modified Site Info1");
 			System.out.println(siteInfo.getValue());
-			outcome = new ActionResult(ActionResult.STRING, "PX Completed");
+			outcome = new ActionResult(ActionResult.STRING, "PX Complete");
 		}
 		catch(APIException e){
 			e.printStackTrace();
